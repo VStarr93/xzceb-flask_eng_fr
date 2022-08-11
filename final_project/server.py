@@ -27,13 +27,14 @@ def french_2_english():
     translated_text = tr.french_to_english(text_to_translate)
     return "Translated text to English : " + translated_text
 
-@app.route("/")
+@app.route("/", methods=['GET'])
 def render_index_page():
     """
     This module translates english to french
     """
     # Write the code to render template
-    return render_template('templates/index.html')
+    #temp = render_template("templates/index.html")
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
