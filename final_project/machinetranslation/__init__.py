@@ -1,5 +1,5 @@
 """
-This is my __init__ file
+This __init__ file imports the translator module
 """
 
 from . import translator
